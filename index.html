@@ -1,0 +1,156 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Apresentações — Segurança da Informação · Wyden</title>
+<meta name="description" content="Versões em PDF das apresentações de Introdução à Segurança da Informação e Desenvolvimento de Software Seguro.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,400;12..96,700;12..96,800&family=Archivo:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --roxo: #3d1146;
+    --magenta: #b01e77;
+    --laranja: #f26f21;
+    --areia: #faf6f2;
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0;
+    padding: clamp(2rem, 6vw, 5rem) clamp(1.25rem, 5vw, 3rem);
+    background: var(--roxo);
+    background-image: radial-gradient(circle at 15% -10%, #5c1a68 0%, transparent 55%),
+                      radial-gradient(circle at 90% 110%, #6d1450 0%, transparent 50%);
+    color: var(--areia);
+    font-family: Archivo, system-ui, -apple-system, "Segoe UI", sans-serif;
+    line-height: 1.6;
+  }
+  main { max-width: 46rem; margin: 0 auto; }
+  .selo {
+    display: inline-block;
+    font-size: .72rem;
+    letter-spacing: .18em;
+    text-transform: uppercase;
+    color: var(--laranja);
+    border: 1px solid rgba(242, 111, 33, .45);
+    border-radius: 999px;
+    padding: .3rem .8rem;
+    margin-bottom: 1.4rem;
+  }
+  h1 {
+    font-family: "Bricolage Grotesque", Archivo, sans-serif;
+    font-weight: 800;
+    font-size: clamp(1.9rem, 6vw, 3rem);
+    line-height: 1.1;
+    margin: 0 0 .7rem;
+  }
+  .intro { color: rgba(250, 246, 242, .72); margin: 0 0 2.5rem; max-width: 34rem; }
+
+  .lista { display: grid; gap: 1rem; }
+  .item {
+    display: block;
+    text-decoration: none;
+    color: inherit;
+    background: rgba(250, 246, 242, .06);
+    border: 1px solid rgba(250, 246, 242, .14);
+    border-radius: 1rem;
+    padding: 1.3rem 1.4rem;
+    transition: border-color .18s ease, background .18s ease, transform .18s ease;
+  }
+  .item:hover, .item:focus-visible {
+    background: rgba(250, 246, 242, .1);
+    border-color: var(--magenta);
+    transform: translateY(-2px);
+    outline: none;
+  }
+  .disciplina {
+    font-size: .7rem;
+    letter-spacing: .14em;
+    text-transform: uppercase;
+    color: var(--magenta);
+    margin-bottom: .35rem;
+  }
+  .titulo {
+    font-family: "Bricolage Grotesque", Archivo, sans-serif;
+    font-weight: 700;
+    font-size: 1.28rem;
+    line-height: 1.25;
+    margin-bottom: .3rem;
+  }
+  .resumo { color: rgba(250, 246, 242, .7); font-size: .93rem; margin-bottom: .9rem; }
+  .meta {
+    display: flex;
+    flex-wrap: wrap;
+    gap: .5rem .9rem;
+    font-size: .8rem;
+    color: rgba(250, 246, 242, .55);
+    align-items: center;
+  }
+  .baixar {
+    color: var(--laranja);
+    font-weight: 600;
+    letter-spacing: .01em;
+  }
+  .ao-vivo {
+    margin-top: 2.6rem;
+    padding-top: 1.6rem;
+    border-top: 1px solid rgba(250, 246, 242, .14);
+    font-size: .9rem;
+    color: rgba(250, 246, 242, .65);
+  }
+  .ao-vivo a { color: var(--areia); }
+  .ao-vivo ul { margin: .7rem 0 0; padding-left: 1.1rem; }
+  .ao-vivo li { margin-bottom: .3rem; }
+  footer {
+    margin-top: 2.6rem;
+    font-size: .8rem;
+    color: rgba(250, 246, 242, .45);
+  }
+</style>
+</head>
+<body>
+<main>
+  <span class="selo">Martha Falcão Wyden · Prof. Ranyere Lima</span>
+  <h1>Apresentações em PDF</h1>
+  <p class="intro">
+    As mesmas apresentações que foram ao ar em sala, exportadas página a página —
+    inclusive as respostas que só aparecem quando a gente avança o slide.
+  </p>
+
+  <div class="lista">
+    <a class="item" href="Classificacao-e-Descarte.pdf" download>
+      <div class="disciplina">Introdução à Segurança da Informação</div>
+      <div class="titulo">Classificação e Descarte</div>
+      <div class="resumo">Cenário TechNova Solutions, quiz de classificação de ativos e o simulado ENADE com as 10 questões respondidas.</div>
+      <div class="meta"><span class="baixar">Baixar PDF ↓</span><span>31 páginas</span><span>4,4 MB</span></div>
+    </a>
+
+    <a class="item" href="Dentro-da-Maquina.pdf" download>
+      <div class="disciplina">Introdução à Segurança da Informação</div>
+      <div class="titulo">Dentro da Máquina</div>
+      <div class="resumo">Hardware, sistemas operacionais e a família ISO/IEC 27000, com o quiz e o gabarito comentado.</div>
+      <div class="meta"><span class="baixar">Baixar PDF ↓</span><span>43 páginas</span><span>12,9 MB</span></div>
+    </a>
+
+    <a class="item" href="Falhar-com-Seguranca.pdf" download>
+      <div class="disciplina">Desenvolvimento de Software Seguro</div>
+      <div class="titulo">Falhar com Segurança</div>
+      <div class="resumo">O princípio fail-safe, com a simulação lado a lado de fail-open (aprova fraude) e fail-closed (recusa e registra).</div>
+      <div class="meta"><span class="baixar">Baixar PDF ↓</span><span>9 páginas</span><span>1,1 MB</span></div>
+    </a>
+  </div>
+
+  <div class="ao-vivo">
+    Versão interativa, com quiz e demo funcionando:
+    <ul>
+      <li><a href="https://cauelimsia.github.io/classificacao-descarte-apresentacao/">Classificação e Descarte</a></li>
+      <li><a href="https://cauelimsia.github.io/hardware-so-iso-apresentacao/">Dentro da Máquina</a></li>
+      <li><a href="https://cauelimsia.github.io/software-seguro-apresentacao/">Falhar com Segurança</a></li>
+    </ul>
+  </div>
+
+  <footer>Cauê Lima · Juan Valente · Felipe Costa · Jefferson · Lucas Gabriel</footer>
+</main>
+</body>
+</html>
