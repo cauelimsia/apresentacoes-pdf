@@ -7,6 +7,7 @@ Versões em PDF dos três decks apresentados na Martha Falcão Wyden (Prof. Rany
 | Arquivo | Disciplina | Páginas |
 |---|---|---|
 | `Classificacao-e-Descarte.pdf` | Introdução à Segurança da Informação | 31 |
+| `Simulado-ENADE-Seguranca-da-Informacao.pdf` | Introdução à Segurança da Informação | 6 |
 | `Dentro-da-Maquina.pdf` | Introdução à Segurança da Informação | 43 |
 | `Falhar-com-Seguranca.pdf` | Desenvolvimento de Software Seguro | 9 |
 
@@ -21,6 +22,13 @@ revelação virou uma página, na mesma ordem em que aparece na aula. Daí 18 sl
 Os decks em si não foram alterados para a exportação; o único ajuste vive no script de
 captura, que desliga as animações de entrada, o cartão do código do controle remoto e a
 camada de grão de filme (ruído por pixel, que sozinho levava um dos PDFs a 132 MB).
+
+## O simulado em documento
+
+`Simulado-ENADE-Seguranca-da-Informacao.pdf` não é uma exportação de slides: o script lê o
+array `QUESTOES` do próprio deck dentro do navegador e formata em A4 corrido. O texto não é
+copiado, então documento e apresentação não têm como divergir — e, fora do slide, a resposta
+não precisa caber em 768px de altura.
 
 ## Versão interativa
 
